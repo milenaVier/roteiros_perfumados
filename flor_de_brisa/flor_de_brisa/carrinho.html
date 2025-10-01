@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carrinho de Compras - Rope</title>
+<link rel="stylesheet" href="stylec.css">
+</head>
+<body>
+<div class="container">
+    <header class="cabecalho">
+        <img class="logo" src="fotos/Rope.jpg" alt="Logo">
+        <div class="titulo">
+            <h1>Roteiros Perfumados - Velas Aromáticas e Aromaterapia</h1>
+            <h2>Seu carrinho de compras</h2>
+        </div>
+    </header>
+
+    <nav class="navegacao">
+        <h2><a href="site.html">Home</a></h2>
+        <h2><a href="velas.html">Velas</a></h2>
+        <h2><a href="oleos.html">Óleos</a></h2>
+        <h2><a href="kits.html">Kits</a></h2>
+        <h2><a href="exclusivas.html">Exclusivas</a></h2>
+        <h2><a href="carrinho.html">Carrinho</a></h2>
+    </nav>
+
+    <div class="mensagem">
+        <h3>Alta performance de fragrância</h3>
+        <h3>Qualidade garantida</h3>
+        <h3>Produção artesanal</h3>
+        <h3>Longa duração de queima</h3>
+    </div>
+
+    <main class="principal">
+        <div class="menu1">
+            <h4>Velas Exclusivas</h4>
+        </div>
+
+        <!-- Seção: Velas Individuais -->
+        <div class="exclusivas">
+            <p>Anaklusmos - R$249,90 <button onclick="adicionarAoCarrinho('Anaklusmos', 249.90)">Adicionar</button></p>
+            <p>Laranja pôr do sol - R$189,90 <button onclick="adicionarAoCarrinho('Laranja pôr do sol', 189.90)">Adicionar</button></p>
+            <p>Manjar turco - R$249,90 <button onclick="adicionarAoCarrinho('Manjar turco', 249.90)">Adicionar</button></p>
+            <p>I knew I'd follow you anywhere - R$199,90 <button onclick="adicionarAoCarrinho('I knew I\'d follow you anywhere', 199.90)">Adicionar</button></p>
+            <p>Team Conrad - R$125,90 <button onclick="adicionarAoCarrinho('Team Conrad', 125.90)">Adicionar</button></p>
+            <p>Cerveja amanteigada - R$160,90 <button onclick="adicionarAoCarrinho('Cerveja amanteigada', 160.90)">Adicionar</button></p>
+            <p>Cinema em casa - R$149,90 <button onclick="adicionarAoCarrinho('Cinema em casa', 149.90)">Adicionar</button></p>
+            <p>Fogueira de acampamento - R$139,90 <button onclick="adicionarAoCarrinho('Fogueira de acampamento', 139.90)">Adicionar</button></p>
+        </div>
+        <div class="menu2">
+          <h4>Outras Velas</h4>
+        </div>
+       <!-- Aroma Caseiro -->
+        <div>
+          <label>Aroma Caseiro:</label>
+          <select id="aromaCaseiro">
+            <option value="Cinema em casa-79.90">Cinema em casa - R$79,90</option>
+            <option value="Tarde de leitura-79.90">Tarde de leitura - R$79,90</option>
+            <option value="Parque de diversão-79.90">Parque de diversão - R$79,90</option>
+            <option value="Fogueira de acampamento-79.90">Fogueira de acampamento - R$79,90</option>
+            <option value="Filminho no inverno-79.90">Filminho no inverno - R$79,90</option>
+            <option value="Aurora Siciliana-79.90">Aurora Siciliana - R$79,90</option>
+            <option value="Casa da vovó-79.90">Casa da vovó - R$79,90</option>
+            <option value="Zé colmeia-79.90">Zé colmeia - R$79,90</option>
+            <option value="Apple pie-79.90">Apple pie - R$79,90</option>
+            <option value="Âmbar Salgado-79.90">Âmbar Salgado - R$79,90</option>
+          </select>
+          <button onclick="adicionarSelecionado('aromaCaseiro')">Adicionar</button>
+        </div>
+
+      <!-- Velas Clássicas -->
+        <div>
+          <label>Velas Clássicas:</label>
+          <select id="classicas">
+            <option value="Cereja com avelã-84.90">Cereja com avelã - R$84,90</option>
+            <option value="Lavanda-84.90">Lavanda - R$84,90</option>
+            <option value="Bambu-84.90">Bambu - R$84,90</option>
+            <option value="Pimenta-rosa-84.90">Pimenta-rosa - R$84,90</option>
+            <option value="Baunilha-84.90">Baunilha - R$84,90</option>
+            <option value="Canela-84.90">Canela - R$84,90</option>
+            <option value="Capim-limão-84.90">Capim-limão - R$84,90</option>
+            <option value="Flor de laranjeira-84.90">Flor de laranjeira - R$84,90</option>
+            <option value="Algodão-84.90">Algodão - R$84,90</option>
+            <option value="Café-84.90">Café - R$84,90</option>
+          </select>
+          <button onclick="adicionarSelecionado('classicas')">Adicionar</button>
+        </div>
+
+        <!-- Aromas em Cartaz -->
+        <div>
+          <label>Aromas em Cartaz:</label>
+          <select id="emCartaz">
+            <option value="Como perder um homem em 10 dias - 109.90">Como perder um homem em 10 dias - R$109,90</option>
+            <option value="Coraline - 99.90">Coraline - R$129,90</option>
+            <option value="Meninas malvadas - 99.90">Meninas malvadas - R$99,90</option>
+            <option value="Enrolados - 149.90">Enrolados - R$149,90</option>
+            <option value="Para todos os garotos que já amei - 109.00">Para todos os garotos que já amei - R$99,90</option>
+            <option value="O Castelo Animado - 119.90">O Castelo Animado - R$119,90</option>
+            <option value="Alice no país das maravilhas - 119.90">Alice no país das maravilhas - R$119,90</option>
+            <option value="10 Coisas que Eu Odeio em Você - 99.90">10 Coisas que Eu Odeio em Você - R$99,90</option>
+          </select>
+          <button onclick="adicionarSelecionado('emCartaz')">Adicionar</button>
+        </div>
+
+        <!-- Perfume das Palavras -->
+        <div>
+          <label>Perfume das Palavras:</label>
+          <select id="perfumePalavras">
+            <option value="A Hipótese do Amor - 169.90">A Hipótese do Amor - R$169,90</option>
+            <option value="É assim que acaba - 139.90">É assim que acabas - R$139,90</option>
+            <option value="O pequeno príncipe - 149.90">O pequeno príncipe - R$149,90</option>
+            <option value="Daisy Jones & The Six - 159.90">Daisy Jones & The Six - R$159,90</option>
+            <option value="Como eu era antes de você - 144.90">Como eu era antes de você - R$144,90</option>
+            <option value="O verão que mudou minha vida - 149.90">O verão que mudou minha vida - R$149,90</option>
+            <option value="A culpa das estrelas - 169.90">A culpa das estrelas - R$169,90</option>
+            <option value="Diário de uma princesa - 139.90">Diário de uma princesa - R$139,90</option>
+          </select>
+          <button onclick="adicionarSelecionado('perfumePalavras')">Adicionar</button>
+        </div>
+
+        <!-- Outros Produtos -->
+        <div>
+          <label>Outros produtos:</label>
+          <select id="outrosProdutos">
+            <option value="Óleos Essenciais-49.90">Óleos Essenciais - R$49,90</option>
+            <option value="Difusor de ambiente 200ml-98.57">Difusor de ambiente 200ml - R$98,57</option>
+          </select>
+          <button onclick="adicionarSelecionado('outrosProdutos')">Adicionar</button>
+      </div>
+
+        <hr>
+
+        <h3>🛒 Carrinho de Compras</h3>
+        <ul id="listaCarrinho"></ul>
+        <p id="total">Total: R$ 0,00</p>
+        <button onclick="finalizarCompra()">Finalizar Compra</button>
+        <div class="menu2">
+                <h4>Participe da melhoria de nossa empresa!</h4>
+                <div class="cards-interativos">
+                    <div class="card-interativo">
+                        <h5>Enviar Sugestões</h5>
+                        <textarea id="sugestoes" placeholder="Digite sua sugestão..."></textarea>
+                        <button onclick="enviarSugestao('sugestoes', 'sugestoes')">Enviar</button>
+                        <ul id="lista-sugestoes"></ul>
+                    </div>
+
+                    <div class="card-interativo">
+                        <h5>Melhorias</h5>
+                        <textarea id="melhorias" placeholder="O que podemos melhorar?"></textarea>
+                        <button onclick="enviarSugestao('melhorias', 'melhorias')">Enviar</button>
+                        <ul id="lista-melhorias"></ul>
+                    </div>
+
+                    <div class="card-interativo">
+                        <h5>Ideias de Velas</h5>
+                        <textarea id="ideias" placeholder="Sugira novas ideias..."></textarea>
+                        <button onclick="enviarSugestao('ideias', 'ideias')">Enviar</button>
+                        <ul id="lista-ideias"></ul>
+                    </div>
+
+                    <div class="card-interativo">
+                        <h5>Avaliações</h5>
+                        <textarea id="avaliacoes" placeholder="Deixe sua avaliação..."></textarea>
+                        <button onclick="enviarSugestao('avaliacoes', 'avaliacoes')">Enviar</button>
+                        <ul id="lista-avaliacoes"></ul>
+                    </div>
+                </div>
+            </div>
+    </main>
+    
+
+    <footer class="foot">
+            <img class="final" src="fotos/Rope.jpg" alt="Logo">
+            <p>Em nossa loja, Rope, criamos velas aromáticas artesanais com ceras 100% vegetais, livres de parafina. 
+                Nossas velas são pensadas para perfumar, decorar e transformar ambientes com fragrâncias envolventes. 
+                Cada modelo é único, feito com carinho do aroma à embalagem. Escolha sua essência e sinta o aconchego no ar.</p>
+            <h5>Whatsapp:</h5>
+            <p>+55 (47) 91234-5678</p>
+            <h5>Email:</h5>
+            <p>roteirosperfumados@gmail.com</p>
+            <h5>Telefone:</h5>
+            <p>+55 (47) 1234-5678</p>
+            <h5>Instagram:</h5>
+            <p>@roteiros_perfumados</p>   
+            <h5>Formas de entrega:</h5>
+            <p>Correios, FedEx</p>  
+        </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

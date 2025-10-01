@@ -1,0 +1,200 @@
+* {
+    padding: 0;        
+    margin: 0;         
+    border: 0;         
+    box-sizing: border-box; 
+}
+.container {
+    display: grid;
+    min-height: 100vh;
+    background-color: #fff6ec;
+    grid-template-columns: repeat(2 auto);
+    grid-template-rows: 0.5fr 0.3fr 0.3fr 3fr 2fr;
+    font-family: Constantia, serif;
+}
+.cabecalho {
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #ffa5a5;
+    color: #663a1f;
+    gap: 90px;
+}
+.logo {
+    margin: -1.5%;
+    width: 250px;
+    max-width: 100%;
+    height: auto;
+}
+.titulo h1{
+    margin: 5px 0;
+}
+.titulo h2 {
+    margin: 5px 0;
+    font-family: "Segoe Script", cursive;
+}
+.navegacao {
+    display: flex;
+    background-color: #ffc5a5;
+    align-items: center;
+    justify-content: space-around;
+    color: #663a1f;
+    font-family: Constantia, serif;
+    text-align: center;
+}
+.navegacao a {
+    color: #663a1f; 
+    font-family: Constantia, serif; 
+    text-decoration: none; 
+}
+
+.navegacao a:hover {
+    color: #3b1f0f; 
+}
+.mensagem {
+    display: flex;
+    background-color: #ffdfc8;
+    align-items: center;
+    justify-content: space-around;
+    color: #663a1f;
+    font-family: "Segoe Script", cursive;
+}
+.mensagem h3 {
+    text-align: center;
+    width: 150px;
+}
+.principal {
+    display: grid;
+    color: #663a1f;
+    font-family: Constantia, serif;
+    text-align: center;
+}
+.cards {
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+    justify-content: space-around;
+}
+.card {
+    background-color: #663a1f;
+    box-shadow: 2px 2px 8px #663a1f;
+    width: 300px;
+    height: 400px;
+    font-family: Constantia, serif;
+    border-radius: 1%;
+}
+.card img {
+    margin-top: 5%;
+    width: 90%;
+    border-radius: 1%;
+}
+.card img:hover {
+    transform: scale(1.05);
+}
+.card p{
+    padding: 10px;
+    color: #ffdfc3;
+    font-size: 20px;
+}
+.menu1, .menu2 h4{
+    padding: 20px;
+}
+.menu1, .menu2 {
+    display: grid;
+    text-align: center;
+    font-size: xx-large;
+    color:#663a1f;
+    font-family: Constantia, serif;
+}
+.cardm1, .cardm2 {
+    background-color: #663a1f;
+}
+.menu1 h4, .menu2 h4{
+    color: rgb#663a1f;
+    font-family: Constantia, serif;
+}
+.final {
+    width: 250px;
+    max-width: 100%;
+    height: auto;
+}
+.foot{
+    display: grid;
+    background-color: #ffa5a5;
+    color: #663a1f;
+}
+.foot img{
+    margin: 1%;
+}
+.foot h5{
+    font-family: "Segoe Script", cursive;
+    text-align: justify;
+    margin: 1%;
+}
+.foot{
+    display: grid;
+    background-color: #ffa5a5;
+    color: #663a1f;
+}
+.foot img{
+    margin: 1%;
+}
+.foot h5{
+    font-family: "Segoe Script", cursive;
+    text-align: justify;
+    margin: 1%;
+}
+.foot p {
+    margin: 1%;
+    text-align: justify;
+}
+/* Cards de interação (menu2) */
+.cards-interativos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+    padding: 20px;
+}
+.card-interativo {
+    background-color: #663a1f;
+    box-shadow: 2px 2px 8px rgba(102, 58, 31, 0.3);
+    border-radius: 12px;
+    padding: 15px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-interativo h5 {
+    margin: 0;
+    color: #ffdfc8;
+    font-size: 20px;
+    font-family: Constantia, serif;
+}
+
+.card-interativo textarea {
+    width: 100%;
+    min-height: 80px;
+    resize: none;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 8px;
+    font-family: Constantia, serif;
+    font-size: 15px;
+}
+
+.card-interativo button {
+    background: #ffdfc8;
+    color: #663a1f;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card-interativo button:hover {
+    background: #3b1f0f;
+}

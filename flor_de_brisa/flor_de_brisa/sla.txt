@@ -1,0 +1,32 @@
+                    <div class="cards">
+                        <div class="card">
+                            <p><br></p>
+                            <p>Anaklusmos <br> - R$ 249,90</p>
+                            <p>Laranja pôr do sol <br> - R$ 189,90</p>
+                            <p>Manjar turco <br> - R$ 249,90</p>
+                            <p>I knew I'd follow you anywhere <br> - R$ 199,90</p>
+                        </div>
+                        <div class="card">
+                            <p><br></p>
+                            <p>Team Conrad <br> - R$ 125,90</p>
+                            <p>Cerveja amanteigada <br> - R$ 160,90</p>
+                            <p>Cinema em casa <br> - R$99,90</p>
+                            <p>Fogueira de acampamento <br> - R$ 109,90</p>
+                        </div>
+                        <div class="card">
+                            <p><br></p>
+                            <p>Velas Aromas em cartaz <br> - de R$ 99,90 a R$ 199,90</p>
+                            <p>Velas Perfume das Palavras<br> - de R$ 109,90 a R$ 209,90</p>
+                            <p>Velas Aroma Caseiro <br> - de R$ 79,90 a R$ 189,90</p>
+                            <p>Velas Clássicas - R$ 84,90</p>
+                            <p>Óleos Essenciais - R$ 49,90</p>
+                        </div>
+                        <div class="card">
+                            <p><br></p>
+                            <p>Velas Aromas em cartaz <br> - de R$ 99,90 a R$ 199,90</p>
+                            <p>Velas Perfume das Palavras<br> - de R$ 109,90 a R$ 209,90</p>
+                            <p>Velas Aroma Caseiro <br> - de R$ 79,90 a R$ 189,90</p>
+                            <p>Velas Clássicas - R$ 84,90</p>
+                            <p>Óleos Essenciais - R$ 49,90</p>
+                        </div>
+                    </div>
